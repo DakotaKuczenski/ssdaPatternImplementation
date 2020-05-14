@@ -1,0 +1,21 @@
+// new class
+//takes input from VideoSocket
+
+
+public class videoadapter implements videoplug {
+    private HDMIPlug myHDMI;
+
+    public videoadapter() {
+        myHDMI = new HDMIPLug();
+    }
+
+    public display(int width, int height ){  //from videoplug.pseudo
+        myHDMI.width = width;               // translate information
+        myHDMI.height = height;
+
+        myHDMI.digitalDisplay();
+
+    }
+
+
+}

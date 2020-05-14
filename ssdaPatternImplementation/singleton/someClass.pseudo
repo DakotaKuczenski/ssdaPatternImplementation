@@ -1,0 +1,8 @@
+public SomeClass{
+
+	public main(){
+        // get rid of object creation
+        Logger l = Logger.getLogger();
+		l.info("hello world");
+	}
+}

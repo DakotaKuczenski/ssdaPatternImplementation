@@ -1,0 +1,8 @@
+public SomeOtherClass{
+
+	public main(){
+                                                // get rid of object creation
+        logger l = Logger.getLogger();
+		l.info("hello from some other class!");
+	}
+}

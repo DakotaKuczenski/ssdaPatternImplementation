@@ -1,0 +1,8 @@
+// get registration information from the user  // user infor from user so controller
+$username = $_POST['username'];
+$pw1 = $_POST['password1'];
+$pw2 = $_POST['password2'];
+
+// validate
+if ($pw1 != $pw2 || !valid($pw1) || !valid($username))
+    return redirectBack(400);

@@ -1,0 +1,22 @@
+public class Logger {
+	private String log;
+    private static Logger singleLogger;
+	// Constructor
+	private Logger(){           //make private
+	}
+
+    public static Logger getlogger(){ // static object logger
+        if(this.singleLogger == null){
+            this.singleLogger = new logger();
+        }
+
+        return this.singleLogger;
+
+    }
+
+    // Log something
+	public info(String information, Object l){
+		this.log.append(information);
+
+    }
+}
